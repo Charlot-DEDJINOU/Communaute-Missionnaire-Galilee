@@ -4,25 +4,29 @@ import Navbar from 'react-bootstrap/Navbar';
 import { NavLink } from 'react-router-dom';
 
 function Header() {
+
+  const active = "text-white text-decoration-none fw-medium"
+  const size = { fontSize: "1.3em" }
+
   return (
-    <Navbar collapseOnSelect expand="lg" style={{ backgroundColor: "rgb(6, 198, 6)"}}>
+    <Navbar collapseOnSelect expand="lg" style={{ backgroundColor: "green" , minheight : "70px"}}>
       <Container>
-        <Navbar.Brand href="#home">Communauté Missionnaire Galilée</Navbar.Brand>
+        <Navbar.Brand className={active} style={size}>Communauté Missionnaire Galilée</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto"></Nav>
           <Nav>
-            <Nav.Item>
-                <NavLink to="/">ACCUEIL</NavLink>
+            <Nav.Item className="mx-3 my-2">
+                <NavLink to="/" className={active} style={size}>Accueil</NavLink>
             </Nav.Item>
-            <Nav.Item>
-                <NavLink to="">NOS FORMATIONS</NavLink>
+            <Nav.Item className="mx-3 my-2">
+                <NavLink to="" className={active} style={size}>Nos Formations</NavLink>
             </Nav.Item>
-            <Nav.Item>
-                <NavLink to="">CONSEILS PASTEURS</NavLink>
+            <Nav.Item className="mx-3 my-2">
+                <NavLink to="" className={active} style={size}>Conseils Pasteurs</NavLink>
             </Nav.Item>
-            <Nav.Item>
-                <NavLink to="">Dank memes</NavLink>
+            <Nav.Item className="mx-3 my-2">
+                <NavLink to="" className={active} style={size}>Nous rejoindre</NavLink>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>
