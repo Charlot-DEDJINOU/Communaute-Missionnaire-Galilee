@@ -1,0 +1,11 @@
+.footerCommunautaire {
+    width: 100%;
+    height: 80px;
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerCommunautaire p {
+    width: 90%;
+}

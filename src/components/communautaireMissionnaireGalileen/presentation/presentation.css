@@ -1,0 +1,12 @@
+.presentationCommunautaire{
+    background-image: url(../../../assets/photo-mpg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    height: 91vh;
+}
