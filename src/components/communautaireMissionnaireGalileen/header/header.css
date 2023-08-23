@@ -1,0 +1,25 @@
+.logo {
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+}
+
+.logo:hover , .link:hover{
+    cursor: pointer;
+    color: black;
+}
+
+/* Média query pour les écrans plus petits */
+@media only screen and (max-width: 500px) {
+    .logo {
+        font-size: 12px;
+        text-align: center;
+    }
+}
+
+/* Média query pour les écrans moyens */
+@media only screen and (max-width: 992px) {
+    .logo {
+        font-size: 15px;
+    }
+}
