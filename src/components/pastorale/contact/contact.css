@@ -1,4 +1,4 @@
-.joindre{
+.contact{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -11,20 +11,20 @@
     background-color: rgba(242, 239, 239, 0.806);
 }
 
-.joindre .joindre-form {
+.contact .contact-form {
     min-height: 85%;
     height: auto;
     width: 50%;
     display: flex;
     flex-direction: column;
-    background-color: rgba(255, 255, 255,1);
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 5px;
     z-index: 10;
 }
 
 @media (max-width: 768px) {
-    .joindre .joindre-form {
+    .contact .contact-form {
         width: 100%;
         background : none;
     }

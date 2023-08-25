@@ -18,6 +18,15 @@
     flex-direction: column;
     justify-content: space-around;
 }
+.message-president {
+    background-color: rgba(242, 239, 239, 0.806);
+    width: 100%;
+}
+.information-pastoral {
+    width: 100%;
+    min-height: 100px;
+    background-image: url(../../../assets/bapteme1.jpg);
+}
 
 @media (max-width: 700px) {
     .about-pastoral .about {

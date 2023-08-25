@@ -7,37 +7,52 @@ import { NavLink } from "react-router-dom"
 function Header() {
 
     const active = "text-white text-decoration-none fw-medium link"
+    const drop = "text-black text-decoration-none fw-medium link"
     const size = { fontSize: "1.3em" , color : "white" }
 
     return (
-        <Navbar expand="lg" collapseOnSelect style={{ backgroundColor: "green" , minheight : "70px"}}>
+        <Navbar expand="lg" collapseOnSelect style={{ backgroundColor: "green" , minHeight : "70px"}}>
             <Container>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
                         <Nav.Item className="mx-3 my-2">
-                            <NavLink to="/" className={active} style={size}>Acceuil</NavLink>
+                            <NavLink to="/pastorale" className={active} style={size}>Acceuil</NavLink>
                         </Nav.Item>
                         <Nav.Item className="mx-3 my-2">
-                            <NavLink to="/Products" className={active} style={size}>Documents</NavLink>
+                            <NavLink to="/" className={active} style={size}>Documents</NavLink>
                         </Nav.Item>
                         <NavDropdown title="Vos Rapports" id="basic-nav-dropdown" className="mx-3 my-0" style={size}>
-                            <NavDropdown.Item href="#action/3.1">R Secrétaire</NavDropdown.Item>
+                            <NavDropdown.Item>
+                                <NavLink to="/rapports/secretaire" className={drop}>R Secrétaire</NavLink>
+                            </NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.2">R Trésorier</NavDropdown.Item>
+                            <NavDropdown.Item>
+                                <NavLink to="/rapports/tresorier" className={drop}>R Trésorier</NavLink>
+                            </NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.3">R Départements</NavDropdown.Item>
+                            <NavDropdown.Item>
+                                <NavLink to="/rapports/departement" className={drop}>R Départements</NavLink>
+                            </NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.1">R Pasteur Communauté</NavDropdown.Item>
+                            <NavDropdown.Item>
+                                <NavLink to="/rapports/pasteurCommunaute" className={drop}>R Pasteur Communauté</NavLink>
+                            </NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.2">R Pasteur District</NavDropdown.Item>
+                            <NavDropdown.Item>
+                                <NavLink to="/rapports/pasteurdistrict" className={drop}>R Pasteur District</NavLink>
+                            </NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.3">R Evêque-adjoint</NavDropdown.Item>
+                            <NavDropdown.Item>
+                                <NavLink to="/rapports/evequeAdjoint" className={drop}>R Evêque-adjoint</NavLink>
+                            </NavDropdown.Item>
                             <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.3">R Evêque</NavDropdown.Item>
+                            <NavDropdown.Item>
+                                <NavLink to="/rapports/eveque" className={drop}>R Evêque</NavLink>
+                            </NavDropdown.Item>
                         </NavDropdown>
                         <Nav.Item className="mx-3 my-2">
-                            <NavLink to="/Contact" className={active} style={size}>Contact</NavLink>
+                            <NavLink to="/pastorale/contact" className={active} style={size}>Contact</NavLink>
                         </Nav.Item>
                         <Nav.Item className="mx-3 my-2">
                             <NavLink to="/" className={active} style={size}>Home CMG</NavLink>
