@@ -24,7 +24,7 @@ function Secretaire() {
     return(
         <>
             <section className='d-flex flex-column align-items-center  justify-content-center py-5 rapport-header'>
-                <h3 className='text-center' style={{color : "green"}}>Formulaire de Rapport Financier des cultes / réunions</h3>
+                <h3 className='text-center' style={{color : "green"}}>Formulaire de soumission de rapport de culte / réunion</h3>
                 <Container className="mt-3 fw-semibold" style={{textAlign : "justify"}}>Tous les secrétaires des communautés, groupes cellulaires, départements d’activité (mouvement des hommes, femmes, jeunes, adolescents, enfants, intercession, chorale, groupe musical, groupe d’évangélisation, etc.), bureaux et conseils des districts, sous-régions et régions de la Communauté Missionnaire Galilée sont conviés de déposer leur rapport à la fin de chaque culte en remplissant le formulaire ci-dessous.</Container>
             </section>
             <section className='rapport'>

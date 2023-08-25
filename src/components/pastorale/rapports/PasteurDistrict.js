@@ -7,7 +7,7 @@ import Container from 'react-bootstrap/Container';
 import RepeatChamps from './RepeatChamps';
 import "./rapport.css"
 
-function PasteurCommunaute() {
+function PasteurDistrict() {
 
     const [validated, setValidated] = useState(false);
 
@@ -24,14 +24,14 @@ function PasteurCommunaute() {
     return(
         <>
             <section className='d-flex flex-column align-items-center  justify-content-center py-5 rapport-header'>
-                <h3 className='text-center' style={{color : "green"}}>Formulaire de soumission de rapport du pasteur, dirigeant,</h3>
-                <Container className="mt-3 fw-semibold" style={{textAlign : "justify"}}>Tous les pasteurs, dirigeants des communautés, églises de maison, bureau et conseil de la Communauté Missionnaire Galilée sont conviés de déposer leur rapport chaque fin de semaine et périodiquement en remplissant l’un des formulaires ci-dessous.</Container>
+                <h3 className='text-center' style={{color : "green"}}>Formulaire de soumission de rapport du pasteur titulaire</h3>
+                <Container className="mt-3 fw-semibold" style={{textAlign : "justify"}}>Tous les pasteurs titulaires des districts de la Communauté Missionnaire Galilée sont conviés de déposer leur rapport chaque fin de semaine et périodiquement en remplissant l’un des formulaires ci-dessous.</Container>
             </section>
             <section className='rapport'>
                 <Form noValidate validated={validated} onSubmit={handleSubmit} className='rapport-form'>
                     <RepeatChamps />
                     <Form.Group as={Col} md="6" className="mb-3" controlId="validationCustom15">
-                        <Form.Label>Semaine couvrant le rapport</Form.Label>
+                        <Form.Label>Période couvrant le rapport</Form.Label>
                         <Form.Control
                             required
                             type="text"
@@ -68,4 +68,4 @@ function PasteurCommunaute() {
     )
 }
 
-export default PasteurCommunaute
+export default PasteurDistrict

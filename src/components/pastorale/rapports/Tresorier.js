@@ -122,7 +122,7 @@ function Tresorier() {
                             <Form.Label>Date du culte/réunion</Form.Label>
                             <Form.Control
                                 required
-                                type="number"
+                                type="date"
                             />
                             <Form.Control.Feedback className='fw-bold'>Correct !</Form.Control.Feedback>
                         </Form.Group>
