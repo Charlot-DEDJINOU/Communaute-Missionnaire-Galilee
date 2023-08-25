@@ -24,7 +24,7 @@ function Header() {
                 <NavLink to="" className={active} style={size}>Nos Formations</NavLink>
             </Nav.Item>
             <Nav.Item className="mx-3 my-2">
-                <NavLink to="" className={active} style={size}>Conseils Pasteurs</NavLink>
+                <NavLink to="/pastorale" className={active} style={size}>Conseils Pasteurs</NavLink>
             </Nav.Item>
             <Nav.Item className="mx-3 my-2">
                 <NavLink to="/joindre" className={active} style={size}>Nous rejoindre</NavLink>
