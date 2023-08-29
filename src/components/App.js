@@ -4,7 +4,8 @@ import CommunautaireHome from "./communautaireMissionnaireGalileen/views/Communa
 import JoindreView from './communautaireMissionnaireGalileen/views/JoindreView';
 import PastoraleHome from './pastorale/views/PastoraleHome';
 import PastoraleContact from './pastorale/views/PastoraleContact';
-import Rapport from './pastorale/views/PastoraleRapport';
+import PastoraleRapport from './pastorale/views/PastoraleRapport';
+import PastoraleDocument from './pastorale/views/PastoraleDocument'
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
               <Route path='/joindre' element={<JoindreView />} />
               <Route path='/pastorale' element={<PastoraleHome />} />
               <Route path='/pastorale/contact' element={<PastoraleContact />} />
-              <Route path='/rapports/:type' element={<Rapport />} />
+              <Route path='/rapports/:type' element={<PastoraleRapport />} />
+              <Route path='/documents' element={<PastoraleDocument />} />
           </Routes>
         </Router>
     </React.StrictMode>
