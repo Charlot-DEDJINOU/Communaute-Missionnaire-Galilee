@@ -6,11 +6,11 @@ import "./header.css"
 
 function Header() {
 
-  const active = "text-white text-decoration-none fw-medium link"
+  const active = "link"
   const size = { fontSize: "1.3em" }
 
   return (
-    <Navbar collapseOnSelect expand="lg" style={{ backgroundColor: "green" , minheight : "70px"}}>
+    <Navbar collapseOnSelect expand="lg" style={{ backgroundColor: "#d09800" , minheight : "70px"}}>
       <Container>
         <Navbar.Brand className='logo'>Communauté Missionnaire Galilée</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />

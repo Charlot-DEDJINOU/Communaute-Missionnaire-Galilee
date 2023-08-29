@@ -90,7 +90,7 @@ function Joindre() {
           feedbackType="invalid"
         />
       </Form.Group>
-      <Button type="submit" style={{backgroundColor : "green" , border : "none"}}>Envoyer</Button>
+      <button type="submit" className='joindrebutton'>Envoyer</button>
     </Form>
     </section>
   );

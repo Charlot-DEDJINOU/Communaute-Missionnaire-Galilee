@@ -4,11 +4,20 @@
     color: white;
 }
 
-.logo:hover , .link:hover{
+.logo:hover {
     cursor: pointer;
     color: black;
 }
-
+.link{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+.link:hover {
+    color: black;
+}
 /* Média query pour les écrans plus petits */
 @media only screen and (max-width: 500px) {
     .logo {

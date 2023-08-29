@@ -1,6 +1,6 @@
 .presentationCommunautaire {
     width: 100%;
-    background-image: url(../../../assets/photo-mpg.jpg);
+    background-image: url(../../../assets/photo-mpg1.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -26,7 +26,6 @@
     font-weight: 700;
     font-size: 30px;
     color: black;
-    text-shadow: 1px 2px white;
 }
 
 /* Média query pour les écrans plus petits */
