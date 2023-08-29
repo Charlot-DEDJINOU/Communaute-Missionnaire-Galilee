@@ -1,0 +1,33 @@
+.documents .pdf {
+    width: 75%;
+    height: 100%;
+}
+.documents .documentButton {
+    width: 25%;
+}
+.documents .documentButton button {
+    width: 90%;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #00a300;
+    color: white;
+    border: none;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+.documents .documentButton button:hover {
+    background-color: #d09800;
+}
+@media (max-width: 700px) {
+    .documents {
+        flex-direction: column;
+    }
+    .documents .documentButton , .documents .pdf {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0px;
+    }
+}

@@ -63,7 +63,7 @@ function Contact() {
             feedbackType="invalid"
             />
         </Form.Group>
-        <Button type="submit" style={{backgroundColor : "green" , border : "none"}}>Envoyer</Button>
+        <button type="submit" className='contactbutton'>Envoyer</button>
     </Form>
     </section>
   );

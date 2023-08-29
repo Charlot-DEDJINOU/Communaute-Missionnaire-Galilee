@@ -22,6 +22,20 @@
     border-radius: 5px;
     z-index: 10;
 }
+.contactbutton {
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #00a300 ;
+    color: white;
+    border: none;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+.contactbutton:hover {
+    background-color: #d09800;
+}
 
 @media (max-width: 768px) {
     .contact .contact-form {

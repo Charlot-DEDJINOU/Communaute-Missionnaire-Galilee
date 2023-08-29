@@ -6,12 +6,12 @@ import { NavLink } from "react-router-dom"
 
 function Header() {
 
-    const active = "text-white text-decoration-none fw-medium link"
+    const active = "link"
     const drop = "text-black text-decoration-none fw-medium link"
-    const size = { fontSize: "1.3em" , color : "white" }
+    const size = { fontSize: "1.3em"}
 
     return (
-        <Navbar expand="lg" collapseOnSelect style={{ backgroundColor: "green" , minHeight : "70px"}}>
+        <Navbar expand="lg" collapseOnSelect style={{ backgroundColor: "#d09800" , minHeight : "70px"}}>
             <Container>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
@@ -20,9 +20,9 @@ function Header() {
                             <NavLink to="/pastorale" className={active} style={size}>Acceuil</NavLink>
                         </Nav.Item>
                         <Nav.Item className="mx-3 my-2">
-                            <NavLink to="/" className={active} style={size}>Documents</NavLink>
+                            <NavLink to="/documents" className={active} style={size}>Documents</NavLink>
                         </Nav.Item>
-                        <NavDropdown title="Vos Rapports" id="basic-nav-dropdown" className="mx-3 my-0" style={size}>
+                        <NavDropdown title="Vos Rapports" id="basic-nav-dropdown" className={"mx-3 my-0" + active} style={size}>
                             <NavDropdown.Item>
                                 <NavLink to="/rapports/secretaire" className={drop}>R Secrétaire</NavLink>
                             </NavDropdown.Item>

@@ -9,7 +9,7 @@ import Eveque from "../rapports/Eveque"
 import EvequeAdjoint from "../rapports/EvequeAdjoint"
 import Departement  from "../rapports/Departement"
 
-function Rapport() {
+function PastoraleRapport() {
     
     const { type } = useParams()
 
@@ -28,4 +28,4 @@ function Rapport() {
     )
 }
 
-export default Rapport
+export default PastoraleRapport

@@ -23,7 +23,7 @@ function EvequeAdjoint() {
     return(
         <>
             <section className='d-flex flex-column align-items-center  justify-content-center py-5 rapport-header'>
-                <h3 className='text-center' style={{color : "green"}}>Formulaire de Rapport périodique de l'Evêque-adjoint CMG</h3>
+                <h3 className='text-center' style={{color : "#00a300"}}>Formulaire de Rapport périodique de l'Evêque-adjoint CMG</h3>
                 <Container className="mt-3 fw-semibold" style={{textAlign : "justify"}}>Tous les Evêques-adjoints responsable des sous-régions de la Communauté Missionnaire Galilée sont conviés à déposer leur rapport périodiquement en remplissant le formulaire ci-dessous. La périodicité est  mensuel, trimestriel, semestriel et annuel.</Container>
             </section>
             <section className='rapport'>
@@ -60,7 +60,7 @@ function EvequeAdjoint() {
                         feedbackType="invalid"
                         />
                     </Form.Group>
-                    <Button type="submit" style={{backgroundColor : "green" , border : "none"}}>Envoyer</Button>
+                    <button type="submit" className='rapportbutton'>Envoyer</button>
                 </Form>
             </section>
         </>

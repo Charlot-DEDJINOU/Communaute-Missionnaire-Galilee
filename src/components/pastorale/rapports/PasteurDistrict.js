@@ -24,7 +24,7 @@ function PasteurDistrict() {
     return(
         <>
             <section className='d-flex flex-column align-items-center  justify-content-center py-5 rapport-header'>
-                <h3 className='text-center' style={{color : "green"}}>Formulaire de soumission de rapport du pasteur titulaire</h3>
+                <h3 className='text-center' style={{color : "#00a300"}}>Formulaire de soumission de rapport du pasteur titulaire</h3>
                 <Container className="mt-3 fw-semibold" style={{textAlign : "justify"}}>Tous les pasteurs titulaires des districts de la Communauté Missionnaire Galilée sont conviés de déposer leur rapport chaque fin de semaine et périodiquement en remplissant l’un des formulaires ci-dessous.</Container>
             </section>
             <section className='rapport'>
@@ -61,7 +61,7 @@ function PasteurDistrict() {
                         feedbackType="invalid"
                         />
                     </Form.Group>
-                    <Button type="submit" style={{backgroundColor : "green" , border : "none"}}>Envoyer</Button>
+                    <button type="submit" className='rapportbutton'>Envoyer</button>
                 </Form>
             </section>
         </>

@@ -24,7 +24,7 @@ function Tresorier() {
     return(
         <>
             <section className='d-flex flex-column align-items-center  justify-content-center py-5 rapport-header'>
-                <h3 className='text-center' style={{color : "green"}}>Formulaire de Rapport Financier des cultes / réunions</h3>
+                <h3 className='text-center' style={{color : "#00a300"}}>Formulaire de Rapport Financier des cultes / réunions</h3>
                 <Container className="mt-3 fw-semibold" style={{textAlign : "justify"}}>Tous les Trésoriers, Comptables, Directeurs Financiers des communautés, églises de maison, départements d’activité (mouvement des hommes, femmes, jeunes, adolescents, enfants, intercession, chorale, groupe musical, groupe d’évangélisation, etc.), bureaux et conseils des districts, sous-régions et régions de la Communauté Missionnaire Galilée sont conviés de déposer les rapports financiers des cultes et réunions en remplissant le formulaire ci-dessous.</Container>
             </section>
             <section className='rapport'>
@@ -135,7 +135,7 @@ function Tresorier() {
                         feedbackType="invalid"
                         />
                     </Form.Group>
-                    <Button type="submit" style={{backgroundColor : "green" , border : "none"}}>Envoyer</Button>
+                    <button type="submit" className='rapportbutton'>Envoyer</button>
                 </Form>
             </section>
         </>
