@@ -22,7 +22,7 @@ function Header() {
                         <Nav.Item className="mx-3 my-2">
                             <NavLink to="/documents" className={active} style={size}>Documents</NavLink>
                         </Nav.Item>
-                        <NavDropdown title="Vos Rapports" id="basic-nav-dropdown" className={"mx-3 my-0" + active} style={size}>
+                        <NavDropdown title="Vos Rapports" bsPrefix="link d-inline-block mx-3 my-2" style={size}>
                             <NavDropdown.Item>
                                 <NavLink to="/rapports/secretaire" className={drop}>R Secrétaire</NavLink>
                             </NavDropdown.Item>
