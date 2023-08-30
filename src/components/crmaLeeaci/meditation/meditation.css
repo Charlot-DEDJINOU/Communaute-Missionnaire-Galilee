@@ -1,0 +1,59 @@
+.cmra-before-meditation {
+    padding: 40px 0px;
+}
+.cmra-before-meditation .meditation {
+    min-height: 25vh;
+}
+.cmra-before-meditation .meditation .buttons {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.centreAcceuil {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.centreAcceuil:hover {
+    color: #d09800;
+}
+.cmra-before-meditation .meditation .buttons button , .cmra-before-meditation .meditation .buttons p {
+    width: 300px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #0170b9 ;
+    color: white;
+    border: none;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+.cmra-before-meditation .meditation .buttons button:hover , .cmra-before-meditation .meditation .buttons p:hover {
+    background-color: #d09800;
+    color: white;
+}
+.cmra-meditation{
+    padding: 40px 0px;
+    background-image: url(../../../assets/bapteme2.jpg);
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cmra-meditation .meditation {
+    width: 50%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: justify;
+}
+@media (max-width : 720px) {
+    .cmra-meditation .meditation {
+        width: 80%;
+    }
+}
