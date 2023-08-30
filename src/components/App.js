@@ -5,7 +5,8 @@ import JoindreView from './communautaireMissionnaireGalileen/views/JoindreView';
 import PastoraleHome from './pastorale/views/PastoraleHome';
 import PastoraleContact from './pastorale/views/PastoraleContact';
 import PastoraleRapport from './pastorale/views/PastoraleRapport';
-import PastoraleDocument from './pastorale/views/PastoraleDocument'
+import PastoraleDocument from './pastorale/views/PastoraleDocument';
+import CrmaLeeaciHome from './crmaLeeaci/views/CrmaLeeaciHome';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
               <Route path='/pastorale/contact' element={<PastoraleContact />} />
               <Route path='/rapports/:type' element={<PastoraleRapport />} />
               <Route path='/documents' element={<PastoraleDocument />} />
+              <Route path='/crmaLeeaci' element={<CrmaLeeaciHome />} />
           </Routes>
         </Router>
     </React.StrictMode>
