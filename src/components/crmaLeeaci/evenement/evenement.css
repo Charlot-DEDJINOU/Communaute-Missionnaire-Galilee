@@ -1,0 +1,27 @@
+.evenements {
+    padding: 20px;
+    background-color: rgb(243, 243, 243);
+}
+.evenement {
+    width: 300px;
+    height: 570px;
+    background-color: white;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.3);
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+.evenement:hover {
+    color: white;
+    background-color: #00a300;
+    cursor: pointer;
+}
+.evenement .place {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    font-style: italic;
+}
+.evenement .place:hover {
+    color: #d09800;
+    cursor: pointer;
+}
