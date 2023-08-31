@@ -1,0 +1,42 @@
+.theologiePatrique .first {
+    min-height: 600px;
+    background-image: url(../../../assets/bapteme.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.theologiePatrique .first .second {
+    width: 68%;
+    padding: 20px 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: justify;
+    background-color: white;
+}
+.theologiePatrique .first .second p i , .theologiePatrique .third i {
+    color: #00a300;
+}
+.theologiePatrique .first .second p i:hover , .theologiePatrique .third i:hover{
+    color: #d09800;
+    cursor: pointer;
+}
+.theologiePatrique .third {
+    display: flex ;
+    justify-content: space-between;
+}
+.theologiePatrique .third div {
+    width: 48%;
+}
+@media (max-width : 720px) {
+    .theologiePatrique .first .second {
+        width: 90%;
+    }
+    .theologiePatrique .third {
+        flex-direction: column;
+    }
+    .theologiePatrique .third div {
+        width: 95%;
+        margin-top: 10px;
+    }
+}
