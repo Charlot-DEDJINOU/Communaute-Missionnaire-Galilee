@@ -1,5 +1,32 @@
 .footer-crma {
     width: 100%;
-    height: 400px;
+    min-height: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     background-color: #0170b9;
+    color: white;
+}
+.footer-crma .information , .footer-crma .copyrigth{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-crma .copyrigth div {
+    width: 48%;
+    text-align: justify;
+}
+@media (max-width : 500px) {
+    .footer-crma .copyrigth {
+        flex-direction: column;
+    }
+    .footer-crma .copyrigth div {
+        width: 95%;
+    }
+    .footer-crma .information .icone {
+        display: flex;
+        height: 150px;
+        justify-content: space-between;
+        flex-direction: column;
+    }
 }

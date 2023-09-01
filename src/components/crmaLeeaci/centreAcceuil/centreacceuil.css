@@ -1,0 +1,41 @@
+.centreAcceuil-about {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.centreAcceuil-about .image-centreAcceuil {
+    width: 50%;
+    height: 350px;
+}
+.centreAcceuil-about div {
+    width: 45%;
+    text-align: justify;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.offre {
+    width: 300px;
+    box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.3);
+}
+.offre:hover {
+    box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+@media (max-width: 700px) {
+
+    .centreAcceuil-about {
+        flex-direction: column;
+    }
+
+    .centreAcceuil-about div {
+        width: 95%;
+    }
+
+    .centreAcceuil-about .image-centreAcceuil {
+        width: 100%;
+        object-fit: fill;
+        margin-bottom: 10px;
+    }
+}

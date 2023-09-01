@@ -1,33 +1,41 @@
-.evenements {
-    padding: 20px;
-    background-color: rgb(243, 243, 243);
-}
-.evenement {
+/*--------------------------- Page inscription -------------------------------*/
+.inscription button {
     width: 300px;
-    height: 570px;
-    background-color: white;
-    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #0170b9 ;
+    color: white;
+    border: none;
     transition-property: all;
     transition-duration: 0.5s;
 }
-.evenement:hover {
+.inscription button:hover {
+    background-color: #d09800;
     color: white;
-    background-color: #00a300;
-    cursor: pointer;
 }
-.evenement .place {
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-    font-style: italic;
+.inscription .inscriptionbutton {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
-.evenement .place:hover {
+.inscription .i {
+    color: #0170b9;
+    text-decoration: underline;
+}
+.inscription .i:hover {
     color: #d09800;
+    font-weight: bold;
     cursor: pointer;
 }
-/*----------------------------- Formulaire d'inscription ----------------------------*/
 
-.event{
+/*----------------------------------- Pages Login et Register -----------------------------------*/
+.register{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -40,7 +48,7 @@
     background-color: rgba(242, 239, 239, 0.806);
 }
 
-.event .event-form {
+.register .register-form {
     min-height: 85%;
     height: auto;
     width: 50%;
@@ -51,7 +59,7 @@
     border-radius: 5px;
     z-index: 10;
 }
-.eventbutton {
+.registerbutton {
     width: 100%;
     padding: 10px;
     margin: 5px;
@@ -62,18 +70,20 @@
     transition-property: all;
     transition-duration: 0.5s;
 }
-.eventbutton:hover {
+.registerbutton:hover {
     background-color: #d09800;
 }
-.event .do-hover:hover {
+.register .do-hover:hover {
     color: #d09800;
     font-weight: bold;
     cursor: pointer;
 }
 
 @media (max-width: 768px) {
-    .event .event-form {
+    .register .register-form {
         width: 100%;
         background : none;
     }
 }
+
+/* Média query pour les écrans moyens */
