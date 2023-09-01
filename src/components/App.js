@@ -7,6 +7,12 @@ import PastoraleContact from './pastorale/views/PastoraleContact';
 import PastoraleRapport from './pastorale/views/PastoraleRapport';
 import PastoraleDocument from './pastorale/views/PastoraleDocument';
 import CrmaLeeaciHome from './crmaLeeaci/views/CrmaLeeaciHome';
+import CrmaLeeaciInscription from './crmaLeeaci/views/CrmaLeeaciInscription';
+import CrmaLeeaciRegister from './crmaLeeaci/views/CrmaLeeaciRegister';
+import CrmaLeeaciLogin from './crmaLeeaci/views/CrmaLeeaciLogin';
+import CrmaLeeaciMeditation from './crmaLeeaci/views/CrmaLeeaciMediation';
+import CrmaLeeaciCentreAcceuil from './crmaLeeaci/views/CrmaLeeaciCentreAcceuil';
+import CrmaLeeaciFormulaireEvenement from './crmaLeeaci/views/CmraLeeaciFormulaireEvenement';
 
 function App() {
   return (
@@ -20,6 +26,12 @@ function App() {
               <Route path='/rapports/:type' element={<PastoraleRapport />} />
               <Route path='/documents' element={<PastoraleDocument />} />
               <Route path='/crmaLeeaci' element={<CrmaLeeaciHome />} />
+              <Route path='/inscription' element={<CrmaLeeaciInscription />} />
+              <Route path='/register' element={<CrmaLeeaciRegister />} />
+              <Route path='/login' element={<CrmaLeeaciLogin />} />
+              <Route path='/meditation' element={<CrmaLeeaciMeditation />} />
+              <Route path='/centreAcceuil' element={<CrmaLeeaciCentreAcceuil />} />
+              <Route path='/inscriptionEvenement' element={<CrmaLeeaciFormulaireEvenement />} />
           </Routes>
         </Router>
     </React.StrictMode>
