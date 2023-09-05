@@ -13,6 +13,8 @@ import CrmaLeeaciLogin from './crmaLeeaci/views/CrmaLeeaciLogin';
 import CrmaLeeaciMeditation from './crmaLeeaci/views/CrmaLeeaciMediation';
 import CrmaLeeaciCentreAcceuil from './crmaLeeaci/views/CrmaLeeaciCentreAcceuil';
 import CrmaLeeaciFormulaireEvenement from './crmaLeeaci/views/CmraLeeaciFormulaireEvenement';
+import CrmaLeeaciAbout from './crmaLeeaci/views/CmraLeeaciAbout';
+import CrmaAdmission from './crmaLeeaci/views/CmraLeeaciAdmission'
 
 function App() {
   return (
@@ -32,6 +34,8 @@ function App() {
               <Route path='/meditation' element={<CrmaLeeaciMeditation />} />
               <Route path='/centreAcceuil' element={<CrmaLeeaciCentreAcceuil />} />
               <Route path='/inscriptionEvenement' element={<CrmaLeeaciFormulaireEvenement />} />
+              <Route path='/apropos' element={<CrmaLeeaciAbout />} />
+              <Route path='admissions' element={<CrmaAdmission />} />
           </Routes>
         </Router>
     </React.StrictMode>
