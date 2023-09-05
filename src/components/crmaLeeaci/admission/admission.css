@@ -1,0 +1,54 @@
+.admission {
+    display: flex;
+    justify-content: space-between;
+}
+.admission .image-admission {
+    width: 50%;
+    height: 100%;
+    height: 350px;
+}
+.admission div {
+    width: 45%;
+    text-align: justify;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.admissionbutton {
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    background-color: #00a300;
+    color: white;
+    border: none;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+.admissionbutton:hover {
+    background-color: #d09800;
+}
+.admission .admission-i {
+    text-decoration: underline;
+    color: #00a300;
+}
+.admission .admission-i:hover {
+    color: #d09800;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .admission {
+        flex-direction: column;
+    }
+    .admission div {
+        width: 95%;
+    }
+    .admission .image-admission {
+        width: 100%;
+        object-fit: fill;
+        margin-bottom: 10px;
+    }
+}

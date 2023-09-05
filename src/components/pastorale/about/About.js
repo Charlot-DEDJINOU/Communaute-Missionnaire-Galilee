@@ -2,7 +2,6 @@ import image from "../../../assets/LOGO-CONSEIL-NATIONAL-PASTEURS-CMG.jpg"
 import leonce from "../../../assets/Leonce-dagbo.jpeg"
 import Container from 'react-bootstrap/Container';
 import "./about.css"
-import Button from "react-bootstrap/Button";
 
 function About() {
     return(

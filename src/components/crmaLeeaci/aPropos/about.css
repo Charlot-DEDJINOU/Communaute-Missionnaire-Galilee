@@ -1,0 +1,41 @@
+.crmaleeaci-about {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.crmaleeaci-about .image-crmaleeaci-about {
+    width: 50%;
+    height: 350px;
+}
+.crmaleeaci-about div {
+    width: 45%;
+    text-align: justify;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+@media (max-width: 700px) {
+
+    .crmaleeaci-about {
+        flex-direction: column;
+    }
+
+    .crmaleeaci-about div {
+        width: 95%;
+    }
+
+    .reverse {
+        flex-direction: column-reverse;
+    }
+
+    .crmaleeaci-about .image2 {
+        margin-top: 15px;
+    }
+
+    .crmaleeaci-about .image-crmaleeaci-about {
+        width: 100%;
+        object-fit: fill;
+        margin-bottom: 10px;
+    }
+}
