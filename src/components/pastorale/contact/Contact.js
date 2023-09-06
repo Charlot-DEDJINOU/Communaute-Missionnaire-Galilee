@@ -42,7 +42,7 @@ function Contact() {
         </Form.Group>
         <Form.Group as={Col} md="12" className="mb-3" controlId="validationCustom04">
             <Form.Label>Objet</Form.Label>
-            <Form.Control type="text" placeholder="exemple@gmail.com" required />
+            <Form.Control type="text" required />
             <Form.Control.Feedback type="invalid" className='fw-bold'>
             Please provide a valid objet.
             </Form.Control.Feedback>

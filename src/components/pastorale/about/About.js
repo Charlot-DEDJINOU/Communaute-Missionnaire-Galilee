@@ -1,9 +1,12 @@
 import image from "../../../assets/LOGO-CONSEIL-NATIONAL-PASTEURS-CMG.jpg"
 import leonce from "../../../assets/Leonce-dagbo.jpeg"
 import Container from 'react-bootstrap/Container';
+import { useNavigate } from "react-router-dom"
 import "./about.css"
 
 function About() {
+
+    const navigate = useNavigate()
     return(
         <>
             <section className="about-pastoral mt-5">
@@ -12,7 +15,7 @@ function About() {
                         <div>
                             <p className="text-center fs-3 fw-bold" style={{color : "#d09800"}}>Notre Objectif</p>
                             <p style={{textAlign : "justify"}}>Bienvenu au Conseil International des Pasteurs de la Communauté Missionnaire Galilée. Pasteurs (apôtre, prophète, évangéliste, pasteur, docteur) et collaborateurs du pasteur (secrétaire, trésorier, diacre, ancien , pasteur laïc), c’est votre page officielle pour toutes vos activités, pastorales et rapports d’activités. Revenez chaque fois consulter les nouvelles et actualités pastorales.</p>
-                            <button className="aboutbutton">Contactez nous</button>
+                            <button className="aboutbutton" onClick={() => navigate('/pastorale/contact')}>Contactez nous</button>
                         </div>
                 </Container>
             </section>
