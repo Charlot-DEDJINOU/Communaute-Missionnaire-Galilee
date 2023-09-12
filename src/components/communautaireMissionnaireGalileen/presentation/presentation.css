@@ -1,45 +1,43 @@
-.presentationCommunautaire {
-    width: 100%;
-    background-image: url(../../../assets/photo-mpg1.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-    position: relative; /* Ajout de cette ligne pour définir le contexte de positionnement */
+.presentation-communautaire {
+    margin-top: 140px;
+    min-height: 50vh;
 }
-
-.presentationCommunautaire::before {
+.presentation-communautaire .presentation-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.presentation-communautaire .presentation-container .carousel-communautaire {
+    width: 50%;
+}
+@media (max-width: 700px) {
+    .presentation-communautaire .presentation-container {
+        flex-direction: column;
+    }
+    .presentation-communautaire .presentation-container .carousel-communautaire {
+        width: 100%;
+    }
+}
+.presentation-communautaire .presentation-container .carousel-communautaire .item {
+   width: 100%;
+   height: 400px;
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+   display: flex;
+   align-items: flex-end;
+   border-radius: 10px;
+}
+.presentation-communautaire .presentation-container .carousel-communautaire .item div {
+    z-index: 10;
+}
+.presentation-communautaire .presentation-container .carousel-communautaire .item::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(255, 255, 255, 0.189); /* Couleur de fond avec opacité */
+    background-color: rgba(0, 0, 0, 0.3); /* Couleur de fond avec opacité */
 }
-
-.presentationCommunautaire .texte {
-    font-weight: 700;
-    font-size: 30px;
-    color: black;
-}
-
-/* Média query pour les écrans plus petits */
-@media (max-width: 768px) {
-    .presentationCommunautaire .texte {
-        font-size: 22px;
-    }
-}
-
-/* Média query pour les écrans moyens */
-@media (max-width: 992px) {
-    .presentationCommunautaire .texte {
-        font-size: 25px;
-    }
-}
-
-/* Aucun média query pour les grands écrans, la taille par défaut (30px) s'appliquera */
