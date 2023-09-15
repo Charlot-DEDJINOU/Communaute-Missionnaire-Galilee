@@ -1,12 +1,4 @@
-.header-communautaire
-{
-    top: 0px;
-    position: fixed;
-    width: 100%;
-    min-height : 70px ;
-    z-index: 10;
-}
-.header-communautaire .header-contact
+.header-contact
 {
     width: 100%;
     display: flex;
@@ -16,23 +8,23 @@
     background-color: blue;
     color: white;
 }
-.header-communautaire .header-contact b 
+.header-contact b 
 {
     display: inline-block;
     flex: 1;
 }
-.header-communautaire .header-contact b:hover 
+.header-contact b:hover 
 {
     text-decoration: underline;
     cursor: pointer;
 }
-.header-communautaire .header-contact .icone
+.header-contact .icone
 {
     flex: 1;
     display: flex;
     justify-content: flex-end;
 }
-.header-communautaire .header-nav .item 
+.header-nav .item 
 {
     padding: 10px 20px;
     border-radius: 10px;
@@ -43,6 +35,6 @@
     text-decoration: none;
     background-color: blue;
 }
-.header-communautaire .header-nav .item:hover {
+.header-nav .item:hover , .header-nav div:hover {
     cursor: pointer;
 }
