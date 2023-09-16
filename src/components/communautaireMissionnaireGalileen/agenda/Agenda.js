@@ -1,7 +1,8 @@
 import Container from "react-bootstrap/Container"
-import item1 from "../../../assets/bapteme1.jpg"
 import "./agenda.css"
 import { useState } from "react"
+import Evenement from "./Evenement"
+import item1 from "../../../assets/bapteme1.jpg"
 
 function Agenda() {
 
@@ -23,30 +24,10 @@ function Agenda() {
                         </div>
                     </div>
                     <div className="evenement-futur">
-                        <div className="item-evenement my-2">
-                            <img src={item1} alt="evenement" />
-                            <div>
-                                <span className="date">Ven 08 Septembre</span>
-                                <span className="name">Charlot DEDJINOU</span>
-                                <span className="status">En présentiel</span>
-                            </div>
-                        </div>
-                        <div className="item-evenement my-2">
-                            <img src={item1} alt="evenement" />
-                            <div>
-                                <span className="date">Ven 08 Septembre</span>
-                                <span className="name">Charlot DEDJINOU</span>
-                                <span className="status">En présentiel</span>
-                            </div>
-                        </div>
-                        <div className="item-evenement my-2">
-                            <img src={item1} alt="evenement" />
-                            <div>
-                                <span className="date">Ven 08 Septembre</span>
-                                <span className="name">Charlot DEDJINOU</span>
-                                <span className="status">En présentiel</span>
-                            </div>
-                        </div>
+                        <h3 className="text-center mb-3">Evenement prochain</h3>
+                        <Evenement />
+                        <Evenement />
+                        <Evenement />
                     </div>
                 </div>
             </Container>
