@@ -54,7 +54,7 @@ function Activities()
 
     return(
         <section className="my-5">
-            <h2 className='mx-5 my-4'>Activites à la CMG</h2>
+            <h2 className='m-5'>Activites à la CMG</h2>
              <Slider {...settings} className='d-flex justify-content-between '>
                 { data.map(item => 
                     <Activitie {...item} />
