@@ -27,6 +27,7 @@ function Media()
                         <span className="fs-1 d-inline-block">Pour en enfant</span>
                         <span className="d-inline-block" style={{color : "blue"}}><ArrowIcon /></span>
                     </div>
+                    <button className="btn btn-primary fw-medium py-3 mt-5">Voir le dernier culte</button>
                 </div>
             </Container>
         </section>
