@@ -13,7 +13,7 @@ function Header() {
   return(
         <>
           <Contact />
-          <Navbar collapseOnSelect expand="lg" className="header-nav" style={{ minheight : "70px"}}>
+          <Navbar collapseOnSelect expand="lg" className="header-nav" style={{ minheight : "70px" , zIndex : "15"}}>
           <Container>
             <Navbar.Brand className='text-black fw-bold'>Communauté Missionnaire Galilée</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />

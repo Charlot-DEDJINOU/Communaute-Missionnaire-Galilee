@@ -6,7 +6,7 @@ import "./presentation.css"
 
 function Presentation() {
     return(
-       <section className="presentation-communautaire mb-5">
+       <section className="presentation-communautaire ">
             <Container className="presentation-container">
                 <h1 className="mb-3">
                     Bienvenue au <span>Coeur </span> de l'église !

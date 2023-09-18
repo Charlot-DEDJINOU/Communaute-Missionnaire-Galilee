@@ -9,8 +9,10 @@
     align-items: flex-end;
     justify-content: center;
     border-radius: 15px;
-  }
-  
+}
+.activites {
+    overflow: hidden;
+}
 .activite::before {
     content: "";
     position: absolute;

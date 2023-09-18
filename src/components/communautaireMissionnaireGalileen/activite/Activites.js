@@ -53,9 +53,9 @@ function Activities()
       };
 
     return(
-        <section className="my-5">
+        <section className="my-5 activites">
             <h2 className='m-5'>Activites à la CMG</h2>
-             <Slider {...settings} className='d-flex justify-content-between '>
+             <Slider {...settings}>
                 { data.map(item => 
                     <Activitie {...item} />
                 )}

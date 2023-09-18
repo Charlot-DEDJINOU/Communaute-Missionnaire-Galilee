@@ -1,6 +1,7 @@
 .presentation-communautaire {
-    margin-top: 40px;
+    margin-top: 150px;
     min-height: 50vh;
+    margin-bottom: 25px;
 }
 .presentation-communautaire .presentation-container {
     display: flex;
@@ -27,6 +28,11 @@
     }
     .presentation-communautaire .presentation-container .carousel-communautaire {
         width: 100%;
+    }
+    .presentation-communautaire .presentation-container h1 {
+        width: 95%;
+        font-size: 25px;
+        text-align: center;
     }
 }
 .presentation-communautaire .presentation-container .carousel-communautaire .iteme {
