@@ -15,6 +15,8 @@ import CrmaLeeaciCentreAcceuil from './crmaLeeaci/views/CrmaLeeaciCentreAcceuil'
 import CrmaLeeaciFormulaireEvenement from './crmaLeeaci/views/CmraLeeaciFormulaireEvenement';
 import CrmaLeeaciAbout from './crmaLeeaci/views/CmraLeeaciAbout';
 import CrmaAdmission from './crmaLeeaci/views/CmraLeeaciAdmission'
+import CommunautaireSecteurs from './communautaireMissionnaireGalileen/views/CommunautaireSecteurs';
+import CommunautaireEglises from './communautaireMissionnaireGalileen/views/CommunautaireEglises';
 
 function App() {
   return (
@@ -36,6 +38,8 @@ function App() {
               <Route path='/inscriptionEvenement' element={<CrmaLeeaciFormulaireEvenement />} />
               <Route path='/apropos' element={<CrmaLeeaciAbout />} />
               <Route path='admissions' element={<CrmaAdmission />} />
+              <Route path="/secteurs" element={<CommunautaireSecteurs />} />
+              <Route path="/eglises" element={<CommunautaireEglises />} />
           </Routes>
         </Router>
     </React.StrictMode>
