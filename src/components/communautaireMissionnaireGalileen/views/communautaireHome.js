@@ -4,7 +4,7 @@ import Presentation from "../presentation/Presentation"
 import Agenda from "../agenda/Agenda"
 import Activities from "../activite/Activites"
 import Media from "../media/Media"
-import Eglise from "../eglise/Eglise"
+import SectionEglise from "../eglise/SectionEglise"
 
 function CommunautaireHome() {
     return(
@@ -14,7 +14,7 @@ function CommunautaireHome() {
             <Agenda />
             <Activities />
             <Media />
-            <Eglise />
+            <SectionEglise />
             <Footer />
         </>
     )
