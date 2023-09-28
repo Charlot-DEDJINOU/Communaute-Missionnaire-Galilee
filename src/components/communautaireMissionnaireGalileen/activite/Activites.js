@@ -53,7 +53,7 @@ function Activities()
       };
 
     return(
-        <section className="my-5 activites">
+        <section className="my-5 activites" id="activite">
             <h2 className='m-5'>Activites à la CMG</h2>
              <Slider {...settings}>
                 { data.map(item => 
