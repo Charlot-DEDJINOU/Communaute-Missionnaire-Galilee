@@ -11,7 +11,7 @@ function Media()
     const [image , setImage] = useState(image1)
 
     return(
-        <section className="media">
+        <section className="media" id="media">
             <Container className="media-container">
                 <img src={image} alt="image"/>
                 <div className="options">

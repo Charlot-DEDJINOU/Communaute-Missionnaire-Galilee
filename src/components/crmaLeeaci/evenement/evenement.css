@@ -21,6 +21,13 @@
     width: 100%;
     font-style: italic;
 }
+.evenement .passer {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    color: red;
+}
 .evenement .place:hover {
     color: #d09800;
     cursor: pointer;
@@ -75,5 +82,8 @@
     .event .event-form {
         width: 100%;
         background : none;
+    }
+    .evenement {
+        margin: 20px auto;
     }
 }

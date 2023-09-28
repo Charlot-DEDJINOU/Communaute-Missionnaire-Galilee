@@ -1,19 +1,43 @@
 import Container from "react-bootstrap/Container"
 import "./agenda.css"
 import { useState } from "react"
-import Evenement from "./Evenement"
+import Item from "./Item"
 import item1 from "../../../assets/bapteme1.jpg"
+import { useNavigate } from "react-router-dom"
 
 function Agenda() {
 
     const [show , setShow] = useState(false)
 
+    const data = [
+        {
+            "id" : 1 ,
+            "titre" : "Première convention des Enfants" ,
+            "date" : "Jeudi 04 sept 2024" ,
+            "lieu" : "Abomey Calavi"
+        },
+        {
+            "id" : 2 ,
+            "titre" : "Première convention des Enfants" ,
+            "date" : "Jeudi 04 sept 2024" ,
+            "lieu" : "Abomey Calavi"
+        },
+        {
+            "id" : 3 ,
+            "titre" : "Première convention des Enfants" ,
+            "date" : "Jeudi 04 sept 2024" ,
+            "lieu" : "Abomey Calavi"
+        }
+    ]
+
+    const navigate = useNavigate()
+
     return(
-        <section className="agenda-section">
+        <section className="agenda-section" id="agenda">
             <Container>
                 <div className="d-flex justify-content-between align-content-center mb-3 titre">
                     <h2>Agenda</h2>
-                    <button className="btn btn-primary" style={{backgroundColor :  "black" , border : "none"}}>Voir agenda</button>
+                    <button className="btn btn-primary" onClick={() => navigate("/evenements")} style={{backgroundColor :  "black" , border : "none"}}>Voir agenda</button>
                 </div>
                 <div className="after-titre">
                     <div  style={{ backgroundImage: `url(${item1})` }} className="item" onMouseEnter={() => setShow(true)} onMouseLeave={() => setShow(false)}>
@@ -24,10 +48,13 @@ function Agenda() {
                         </div>
                     </div>
                     <div className="evenement-futur">
-                        <h3 className="text-center mb-3">Evenement prochain</h3>
-                        <Evenement />
-                        <Evenement />
-                        <Evenement />
+                       <div>
+                            <h3 className="text-center mb-3">Evenement prochain</h3>
+                            {
+                                data.map(item => <Item {...item} key={item.id} />)
+                            }
+                       </div>
+                        <button onClick={() => navigate("/evenementsFutur")} >Voir plus</button>
                     </div>
                 </div>
             </Container>

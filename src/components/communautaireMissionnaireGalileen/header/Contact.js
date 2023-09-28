@@ -4,6 +4,7 @@ import FacebookIcon from "../../_icons/FacebookIcon"
 import InstagramIcon from "../../_icons/InstagramIcon"
 import YoutubeIcon from "../../_icons/YoutubeIcon"
 import { useEffect , useState } from "react"
+import RedirectionVersSite from "../../layout/FowardSite"
 
 function Contact() {
 
@@ -32,7 +33,7 @@ function Contact() {
           {windowSize.width > 900 && <b></b>}
           {windowSize.width > 700 && <b>CONTACT I Cliquez ici pour contacter l'église</b>}
           <div className="icone">
-              <FacebookIcon/>
+              <FacebookIcon />
               <InstagramIcon />
               <TwitterIcon />
               <WhatsappIcon />

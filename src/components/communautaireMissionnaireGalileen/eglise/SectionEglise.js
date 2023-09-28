@@ -38,7 +38,7 @@ function SectionEglise()
     ]
 
     return(
-        <section className="section-eglise my-5">
+        <section className="section-eglise my-5" id="eglise">
             <Container>
                 <div className="mb-2 titre">
                     <h2>Au coeur de l’Église</h2>

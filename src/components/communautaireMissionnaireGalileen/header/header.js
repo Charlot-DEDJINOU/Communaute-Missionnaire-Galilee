@@ -10,6 +10,22 @@ function Header() {
 
   const drop = "text-black text-decoration-none fw-medium link"
 
+  const handleClick = (sectionID) => {
+    
+    const sectionElement = document.getElementById(sectionID) ;
+
+    if (sectionElement) {
+
+      const rect = sectionElement.getBoundingClientRect();
+      const scrollPosition = rect.top + window.scrollY - 120;
+
+      window.scrollTo({
+        top: scrollPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   return(
         <>
           <Contact />
@@ -20,16 +36,16 @@ function Header() {
             <Navbar.Collapse id="responsive-navbar-nav">
               <Nav className="me-auto">
                 <Nav.Item className="mx-3 my-2">
-                  <div className="fw-medium">Agenda</div>
+                  <div className="fw-medium" onClick={() => handleClick("agenda")}>Agenda</div>
                 </Nav.Item>
                 <Nav.Item className="mx-3 my-2">
-                  <div className="fw-medium">Activités</div>
+                  <div className="fw-medium" onClick={() => handleClick("activite")}>Activités</div>
                 </Nav.Item>
                 <Nav.Item className="mx-3 my-2">
-                  <div className="fw-medium">Media</div>
+                  <div className="fw-medium" onClick={() => handleClick("media")}>Media</div>
                 </Nav.Item>
                 <Nav.Item className="mx-3 my-2">
-                  <div className="fw-medium">Eglise</div>
+                  <div className="fw-medium" onClick={() => handleClick("eglise")}>Eglise</div>
                 </Nav.Item>
               </Nav>
               <Nav>
