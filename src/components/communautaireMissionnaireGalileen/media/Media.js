@@ -13,7 +13,7 @@ function Media()
     return(
         <section className="media" id="media">
             <Container className="media-container">
-                <img src={image} alt="image"/>
+                <img src={image} alt="media"/>
                 <div className="options">
                     <div className="item mb-4" onMouseEnter={() => setImage(image1)}>
                         <span className="fs-1 d-inline-block">Cultes</span>

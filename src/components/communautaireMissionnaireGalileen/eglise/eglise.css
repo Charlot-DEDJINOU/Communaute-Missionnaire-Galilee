@@ -1,7 +1,6 @@
 /* -------------------------------- Section Eglise --------------------------------------------------*/
 .section-eglise {
     width: 100%;
-    background-color: azure;
 }
 .section-eglise .titre {
     display: flex;

@@ -57,7 +57,7 @@ function Activities()
             <h2 className='m-5'>Activites à la CMG</h2>
              <Slider {...settings}>
                 { data.map(item => 
-                    <Activitie {...item} />
+                    <Activitie {...item} key={item.id}/>
                 )}
              </Slider>
         </section>

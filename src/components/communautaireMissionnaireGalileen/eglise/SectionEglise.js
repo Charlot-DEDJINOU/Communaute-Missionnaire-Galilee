@@ -8,6 +8,7 @@ function SectionEglise()
 
     const data = [
         {
+            'id' : 1 ,
             'image' : item1 ,
             'title' : "Les secteurs",
             'text' : "Venez nous rejoindre pour rencontrer de nouveaux amis autour de la Parole de Dieu.",
@@ -15,6 +16,7 @@ function SectionEglise()
             "url" : "/secteurs"
         },
         {
+            'id' : 2 ,
             'image' : item1 ,
             'title' : "Fédarations et Églises partenaires",
             'text' : "Venez nous rejoindre pour rencontrer de nouveaux amis autour de la Parole de Dieu.",
@@ -22,6 +24,7 @@ function SectionEglise()
             "url" : "/eglises"
         },
         {
+            'id' : 3,
             'image' : item1 ,
             'title' : "Églises partenaires",
             'text' : "Venez nous rejoindre pour rencontrer de nouveaux amis autour de la Parole de Dieu.",
@@ -29,6 +32,7 @@ function SectionEglise()
             "url" : "/secteurs"
         },
         {
+            'id' : 4 ,
             'image' : item1 ,
             'title' : "Églises partenaires",
             'text' : "Venez nous rejoindre pour rencontrer de nouveaux amis autour de la Parole de Dieu.",
@@ -46,7 +50,7 @@ function SectionEglise()
                 </div>
                 <div className="items d-flex flex-wrap justify-content-between">
                     {
-                        data.map(item => <Item {...item} /> )
+                        data.map(item => <Item {...item} key={item.id}/> )
                     }
                 </div>
             </Container>

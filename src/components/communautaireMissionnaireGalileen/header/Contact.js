@@ -4,7 +4,6 @@ import FacebookIcon from "../../_icons/FacebookIcon"
 import InstagramIcon from "../../_icons/InstagramIcon"
 import YoutubeIcon from "../../_icons/YoutubeIcon"
 import { useEffect , useState } from "react"
-import RedirectionVersSite from "../../layout/FowardSite"
 
 function Contact() {
 
