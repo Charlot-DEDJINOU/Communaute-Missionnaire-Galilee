@@ -15,6 +15,7 @@ import CrmaLeeaciCentreAcceuil from './crmaLeeaci/views/CrmaLeeaciCentreAcceuil'
 import CrmaLeeaciFormulaireEvenement from './crmaLeeaci/views/CmraLeeaciFormulaireEvenement';
 import CrmaLeeaciAbout from './crmaLeeaci/views/CmraLeeaciAbout';
 import CrmaAdmission from './crmaLeeaci/views/CmraLeeaciAdmission'
+import CrmaLeeaciProfilUtilisateur from './crmaLeeaci/views/CmraLeeaciProfilUtilisateur';
 import CommunautaireSecteurs from './communautaireMissionnaireGalileen/views/CommunautaireSecteurs';
 import CommunautaireEglises from './communautaireMissionnaireGalileen/views/CommunautaireEglises';
 import CommunautaireEvenements from './communautaireMissionnaireGalileen/views/CommunautaireEvenements';
@@ -40,6 +41,7 @@ function App() {
               <Route path='/inscriptionEvenement' element={<CrmaLeeaciFormulaireEvenement />} />
               <Route path='/apropos' element={<CrmaLeeaciAbout />} />
               <Route path='admissions' element={<CrmaAdmission />} />
+              <Route path="/profil" element={<CrmaLeeaciProfilUtilisateur />} />
               <Route path="/secteurs" element={<CommunautaireSecteurs />} />
               <Route path="/eglises" element={<CommunautaireEglises />} />
               <Route path="/evenementsFutur" element={<CommunautaireEvenements />} />
