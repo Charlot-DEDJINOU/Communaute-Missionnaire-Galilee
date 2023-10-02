@@ -1,0 +1,15 @@
+.profil {
+    margin-top: 40px;
+}
+.profil span {
+    display: inline-block;
+}
+.profil .image {
+    display: flex;
+    align-items: center;
+}
+.profil .image img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
