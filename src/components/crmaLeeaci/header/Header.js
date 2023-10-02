@@ -4,6 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { NavLink } from "react-router-dom"
 import logo from "../../../assets/Logo.png"
+import UserIcon from '../../_icons/UserIcon';
 
 function Header() {
 
@@ -24,9 +25,6 @@ function Header() {
                         <Nav.Item className="mx-3 my-2">
                             <NavLink to="/crmaLeeaci" className={active} style={size}>Acceuil</NavLink>
                         </Nav.Item>
-                        <Nav.Item className="mx-3 my-2">
-                            <NavLink to="/centreAcceuil" className={active} style={size}>Centre d'Accueil</NavLink>
-                        </Nav.Item>
                         <NavDropdown title="Formations" bsPrefix="link d-inline-block mx-3 my-2" style={size}>
                             <NavDropdown.Item>
                                 <NavLink to="/formations/candidats" className={drop}>Candidats</NavLink>
@@ -45,6 +43,10 @@ function Header() {
                             </NavDropdown.Item>
                         </NavDropdown>
                         <NavDropdown title="Autres" bsPrefix="link d-inline-block mx-3 my-2" style={size}>
+                            <NavDropdown.Item>
+                                <NavLink to="/centreAcceuil" className={drop} >Centre d'Accueil</NavLink>
+                            </NavDropdown.Item>
+                            <NavDropdown.Divider />
                             <NavDropdown.Item>
                                 <NavLink to="/academie" className={drop} >Academie</NavLink>
                             </NavDropdown.Item>
@@ -69,6 +71,9 @@ function Header() {
                         </Nav.Item>
                         <Nav.Item className="mx-3 my-2">
                             <NavLink to="/" className={active} style={size}>Home CMG</NavLink>
+                        </Nav.Item>
+                        <Nav.Item className="mx-3 my-2">
+                            <NavLink to="/profil" className={active}><UserIcon /></NavLink>
                         </Nav.Item>
                     </Nav>
                 </Navbar.Collapse>
