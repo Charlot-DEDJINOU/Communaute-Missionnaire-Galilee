@@ -1,5 +1,6 @@
 import Container from "react-bootstrap/Container"
 import CultureBiblique from "./CultureBiblique"
+import CultureGenerale from "./CultureGenerale"
 import { useState } from "react"
 import Modal from "react-bootstrap/Modal"
 import "./tests.css"
@@ -29,12 +30,13 @@ function Tests() {
                 <span>Niveau Français</span>
                 <button>Commencer</button>
             </div>
-            <Modal show={show} onHide={handleClose} centered>
+            <Modal show={show} onHide={handleClose} centered size="lg">
                 <Modal.Header closeButton>
                     <Modal.Title>Test</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-                    <CultureBiblique />
+                    {/* <CultureBiblique /> */}
+                    <CultureGenerale />
                 </Modal.Body>
             </Modal>
         </Container>
