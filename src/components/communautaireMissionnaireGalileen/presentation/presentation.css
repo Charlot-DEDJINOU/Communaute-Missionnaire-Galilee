@@ -22,7 +22,7 @@
 .presentation-communautaire .presentation-container .carousel-communautaire {
     width: 60%;
 }
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     .presentation-communautaire .presentation-container {
         flex-direction: column;
     }

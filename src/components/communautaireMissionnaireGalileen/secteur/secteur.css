@@ -45,6 +45,7 @@
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
+    border: 1px solid red;
 }
 .secteurs .all-secteurs .secteur button {
     margin: 10px 0px;
@@ -84,8 +85,5 @@
         width: 100%;
         margin-bottom: 20px;
         text-align: center;
-    }
-    .secteurs .all-secteurs .secteur {
-        margin: 15px auto;
     }
 }

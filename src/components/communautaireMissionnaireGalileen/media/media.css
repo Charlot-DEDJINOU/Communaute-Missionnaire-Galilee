@@ -1,6 +1,6 @@
 .media {
-    height: 91vh;
-    background-color: rgb(9, 9, 28);
+    min-height: 91vh;
+    background-color: rgba(106, 116, 123, 0.628);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,4 +36,20 @@
     transition-property: all;
     transition-duration: 0.5s;
     color: blue;
+}
+@media (max-width: 800px) {
+    .media {
+        padding: 10px;
+    }
+    .media .media-container {
+        flex-direction: column;
+    }
+    .media .media-container img {
+        margin: 20px 0px;
+        width: 100%;
+    }
+    .media .media-container .options {
+        margin-top: 10px;
+        width: 100%;
+    }
 }

@@ -67,9 +67,20 @@
     font-weight: 600;
     font-size: 15px;
 }
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     .agenda-section .after-titre {
         flex-direction: column;
+    }
+    .agenda-section .after-titre .item {
+        width: 95%;
+        margin: 0px auto;
+    }
+    .agenda-section .after-titre .evenement-futur {
+        width: 95%;
+        margin: 30px auto;
+    }
+    .agenda-section .after-titre .evenement-futur  > * {
+        margin-top: 10px;
     }
 }
 /*------------------------------------- Evenements Futur ---------------------------------*/

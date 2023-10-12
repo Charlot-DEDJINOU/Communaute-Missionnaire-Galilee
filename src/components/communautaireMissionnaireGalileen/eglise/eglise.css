@@ -24,7 +24,7 @@
     height: 400px;
     background-size: cover;
     background-position: center;
-    border-radius: 35px;
+    border-radius: 15px;
 }
 .section-eglise .items .item::before {
     content: "";
@@ -48,6 +48,14 @@
     border: 1px solid white;
     color: white;
     font-weight: bold;
+}
+@media (max-width: 800px) {
+    .section-eglise .items .item {
+        width: 100%;
+    }
+    .section-eglise .titre {
+        flex-direction: column;
+    }
 }
 /*---------------------------------- Page eglises et federations ----------------------------------------*/
 .eglises {
