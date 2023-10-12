@@ -15,7 +15,10 @@ function CultureGenerale() {
         e.preventDefault()
         var data = {}
         for(let question of e.target.elements) {
-            data[question.name] = question.value
+            if (question.checked === true && data[question.name] !== undefined)
+                data[question.name].push(question.value)
+            else if (question.checked === true)
+                data[question.name] = [question.value]
         }
 
         console.log(data)
