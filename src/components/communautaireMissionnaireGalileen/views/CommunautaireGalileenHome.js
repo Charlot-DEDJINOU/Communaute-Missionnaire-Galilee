@@ -1,6 +1,6 @@
 import Header from "../header/HeaderGalileen"
 import Footer from "../footer/FooterGalileen"
-import Presentation from "../presentation/Presentation"
+import Presentation from "../presentation/PresentationGalileen"
 import Agenda from "../agenda/Agenda"
 import Activities from "../activite/Activites"
 import Media from "../media/Media"
