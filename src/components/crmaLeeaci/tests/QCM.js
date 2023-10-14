@@ -7,7 +7,7 @@ function QCM(props) {
 
     return(
         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-                <Form.Label>{props.question}</Form.Label>
+                <Form.Label className="fw-bold">{props.question}</Form.Label>
                 {
                     responses.map((response , index) => <Form.Check 
                                                 key={index}
