@@ -1,5 +1,5 @@
 import AllEvenements from "../agenda/AllEvenements";
-import Header from "../header/Header"
+import Header from "../header/HeaderGalileen"
 import Footer from "../footer/Footer"
 
 function CommunautaireAllEvenements() {

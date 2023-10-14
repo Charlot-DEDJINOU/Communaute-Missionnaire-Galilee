@@ -1,4 +1,4 @@
-import Header from "../header/Header"
+import Header from "../header/HeaderGalileen"
 import Footer from "../footer/Footer"
 import Presentation from "../presentation/Presentation"
 import Agenda from "../agenda/Agenda"

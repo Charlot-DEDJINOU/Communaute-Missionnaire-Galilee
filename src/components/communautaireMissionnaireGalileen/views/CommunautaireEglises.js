@@ -1,4 +1,4 @@
-import Header from "../header/Header"
+import Header from "../header/HeaderGalileen"
 import Footer from "../footer/Footer"
 import Eglises from "../eglise/Eglises"
 
