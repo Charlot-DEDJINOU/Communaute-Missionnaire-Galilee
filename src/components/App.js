@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router , Route , Routes } from 'react-router-dom';
-import CommunautaireHome from "./communautaireMissionnaireGalileen/views/CommunautaireHome"
+import CommunautaireHome from './communautaireMissionnaireGalileen/views/CommunautaireHome';
 import JoindreView from './communautaireMissionnaireGalileen/views/JoindreView';
 import PastoraleHome from './pastorale/views/PastoraleHome';
 import PastoraleContact from './pastorale/views/PastoraleContact';
