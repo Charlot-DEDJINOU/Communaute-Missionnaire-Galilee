@@ -1,5 +1,5 @@
 import Header from "../header/HeaderGalileen"
-import Footer from "../footer/Footer"
+import Footer from "../footer/FooterGalileen"
 import Secteurs from "../secteur/Secteurs"
 
 function CommunautaireSecteurs() {
